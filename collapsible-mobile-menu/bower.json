@@ -1,0 +1,22 @@
+{
+  "name": "collapsible-mobile-menu",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Stanley Sathler <stanleysathlerpinto@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/StanleySathler/components",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reset-css": "^2.2.0",
+    "jquery": "^3.2.1"
+  }
+}

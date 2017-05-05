@@ -1,1 +1,12 @@
+# OS files
 **/.DS_Store
+
+# Dependencies
+**/node_modules/
+**/bower_components/
+
+# Cache files
+**/.sass-cache
+
+# Distribution files
+**/dist/

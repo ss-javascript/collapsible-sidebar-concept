@@ -18,7 +18,10 @@ module.exports = function(Grunt)
 				dest: (distJsPath + "/vendor.js")
 			},
 			app: {
-				src: [],
+				src: [
+					(sourcePath + "/js/components/collapsible-menu.js"),
+					(sourcePath + "/js/app.js")
+				],
 				dest: (distJsPath + "/app.js")
 			}
 		},

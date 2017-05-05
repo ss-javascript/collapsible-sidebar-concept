@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width;initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Collapsible menu for mobile devices</title>
 
 	<link rel="stylesheet" href="dist/css/vendor.css"/>
@@ -22,20 +22,45 @@
 	</nav>
 
 	<section class="sth-appbar">
-		<div class="icon-menu">
-			<!-- Make bars using CSS gradient -->
+		<div class="menu">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
 		</div>
-		<h4>Main container</h4>
+		<h4>Side collapsible menu</h4>
 	</section>
 
 	<main class="sth-content">
-		<h1>Content</h1>
-		<p>Content paragraph</p>
+		<div class="sth-box">
+			<div class="title">
+				<h3>Grocery list</h3>
+			</div>
+			<table class="sth-table">
+				<thead>
+					<th>Name</th>
+					<th>Price ($)</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Milk</td>
+						<td>2.99</td>
+					</tr>
+					<tr>
+						<td>Yogurt</td>
+						<td>1.09</td>
+					</tr>
+					<tr>
+						<td>Sour cream</td>
+						<td>2.19</td>
+					</tr>
+					<tr>
+						<td>Heavy cream</td>
+						<td>2.19</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</main>
-	
-	<footer class="sth-footer">
-		Copyright 2017 - Stanley Sathler
-	</footer>
 
 	<script type="text/javascript" src="dist/js/vendor.js"/>
 	<script type="text/javascript" src="dist/js/app.js"/>

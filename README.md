@@ -3,6 +3,8 @@
 ### What is this?
 A little concept of collapsible sidebar menu developed using Vanilla JS, HTML5 and CSS3.
 
+![The concept](https://github.com/StanleySathler/components/blob/master/readme-files/nimbus-record-video.gif "Sorry by the quality")
+
 ### How can I run it on my computer?
 It's pretty easy:
 

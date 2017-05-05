@@ -2,14 +2,17 @@ nav.sth-menu
 
 	background: blue
 	bottom: 0
-	left: 0
+	left: -200px
 	overflow: hidden
 	position: fixed
 	top: 0
-	width: 0
+	width: 200px
+	z-index: 2001
+
+	+transition(all .4s)
 
 	&.open
-		width: 200px
+		left: 0
 
 	.picture
 		padding: 15px 5px

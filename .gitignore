@@ -7,6 +7,3 @@
 
 # Cache files
 **/.sass-cache
-
-# Distribution files
-**/dist/

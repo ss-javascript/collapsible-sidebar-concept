@@ -1,4 +1,5 @@
-[Demo](#demo) | [What is this](#what-is-this) | [How can I run it?](#how-can-I-run-it-on-my-computer) | [Can I help?](#can-I-help)
+[Demo](#demo) | [What is this](#what-is-this) | [How can I run it?](#how-can-i-run-it-on-my-computer) | [Can I help?](#can-i-help)
+---
 
 ### Demo
 ---

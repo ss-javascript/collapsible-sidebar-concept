@@ -2,7 +2,7 @@
 
 module.exports = function(Grunt)
 {
-	var bowerPath = "./bower_components";
+	var vendorPath = "./node_modules";
 	var sourcePath = "./src";
 	var distPath = "./dist";
 	var distCssPath = (distPath + "/css");
@@ -13,10 +13,6 @@ module.exports = function(Grunt)
 		// Concat
 		concat: {
 			options: { separator: "; \n" },
-			vendor: {
-				src: [(bowerPath + "/jquery/dist/jquery.min.js")],
-				dest: (distJsPath + "/vendor.js")
-			},
 			app: {
 				src: [
 					(sourcePath + "/js/components/collapsible-menu.js"),
@@ -37,7 +33,7 @@ module.exports = function(Grunt)
 		// Concat CSS
 		concat_css: {
 			vendor: {
-				src: [(bowerPath + "/reset-css/reset.css")],
+				src: [(vendorPath + "/reset-css/reset.css")],
 				dest: (distCssPath + "/vendor.css")
 			}
 		},
@@ -47,7 +43,7 @@ module.exports = function(Grunt)
 			options: {},
 			app: {
 				files: (sourcePath + "/**/*"),
-				tasks: ["default"]
+				tasks: ["app"]
 			}
 		}
 	});
@@ -57,6 +53,7 @@ module.exports = function(Grunt)
 	Grunt.loadNpmTasks("grunt-contrib-watch");
 	Grunt.loadNpmTasks("grunt-concat-css");
 
-	Grunt.registerTask("default", ["concat:app", "sass:app"]);
-	Grunt.registerTask("vendor", ["concat:vendor", "concat_css:vendor"]);
+	Grunt.registerTask("default", ["vendor", "app"]);
+	Grunt.registerTask("app", ["concat:app", "sass:app"]);
+	Grunt.registerTask("vendor", ["concat_css:vendor"]);
 }

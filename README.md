@@ -14,9 +14,9 @@ If you want to add it into your project, you should check the source code (for i
 ### How can I run it on my computer?
 It's pretty easy:
 
-* Type `$ npm install` for install NPM dependencies
-* Type `$ bower install` for install Bower dependencies
-* Type `grunt && grunt vendor` for generate the /dist folder
+* Type `$ npm install` or `$ yarn install` to install the dependencies
+* Type `$ npm run build` or `$ yarn build` to generate the `/dist` folder (just to guarantee, since it is versioned)
+* Type `$ npm run demo` or `$ yarn demo` to start a local server with the demo
 
 ### Can I help?
 If you think that something can be improved, feel free to make your pull request. Code refactors, bug fixes, improvements and almost anything are welcome. :)
